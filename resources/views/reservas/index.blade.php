@@ -1,10 +1,16 @@
 @include('reservas.navegacion')
 
+
+
 <h1>Listado de Reservaciones</h1>
 <a href="{{url('reserva/create/')}}" class="btn btn-md  btn-success m-5 fw-bold"><i class="glyphicon glyphicon-plus-sign"></i> Reservaciones</a>
 
-<table class="table table-bordered">
-    <thead class="text-monospace">
+
+
+
+<table class="table table-bordered" >
+
+    <thead class="text-monospace" >
         <tr>
             <th >#</th>
             <th>Nombre</th>
@@ -22,7 +28,8 @@
         </tr>
     </thead>
 
-    <tbody>
+    <tbody style="min-height:100px;">
+        
     @foreach($reservas as $reserva)
         <tr>
             
@@ -49,6 +56,10 @@
                 </form>
             </td>
         </tr>
+
+       
         @endforeach
     </tbody>
 </table>
+
+

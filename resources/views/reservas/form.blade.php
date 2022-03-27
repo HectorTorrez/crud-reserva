@@ -1,5 +1,5 @@
 @include('reservas.navegacion')
-<div class="container ">
+<div class="container  ">
 	<div class="row mt-5">
         <form class="form-horizontal">
         <h2 class="">Nueva Reservacion</h2>
